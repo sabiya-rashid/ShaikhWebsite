@@ -1,0 +1,313 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css");
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+@font-face {
+  font-family: "Lao MN";
+  src: url(/assets/font/Lao\ MN.ttc);
+  font-style: normal;
+  font-weight: 400;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lao MN", sans-serif !important;
+  font-weight: 400;
+  color: #000000;
+}
+.container {
+  max-width: 1440px;
+  padding: 0 87px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.btnP {
+  border-radius: 32px;
+  border: 1px solid #d9ac52;
+  padding: 0.5rem 1rem;
+  color: #d9ac52;
+  line-height: 1;
+}
+h2 {
+  font-size: 54px;
+}
+
+/* Header */
+header .container {
+  margin-bottom: 0 !important;
+}
+.nav-link {
+  font-size: 18px;
+  color: #000000;
+  padding-left: 3rem !important;
+  padding-right: 1rem !important;
+}
+/* Hero section */
+.hero-section .container {
+  padding: 0;
+  background: linear-gradient(
+    90.62deg,
+    rgba(80, 69, 60, 0.8) 0.54%,
+    rgba(85, 74, 64, 0.648) 42.71%,
+    rgba(107, 93, 83, 0) 95.3%
+  );
+}
+.hero-back {
+  min-height: 80vh;
+  background: url(../assets/images/hero.svg) no-repeat center / cover;
+  mix-blend-mode: multiply;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+.hero-section .pattern {
+  position: relative;
+  left: 174px;
+}
+.hero-section .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.hero-section .col-md-6 {
+  left: 20%;
+  position: relative;
+}
+.text h2 {
+  color: #ffffff;
+  font-size: 54px;
+  color: #ffffff;
+  font-weight: 500;
+  z-index: 1;
+}
+.hero-section .text::after {
+  content: "";
+  background: linear-gradient(180deg, #d9ac52 0%, rgba(217, 172, 82, 0) 100%);
+  width: 87px;
+  height: 100%;
+  left: 87px;
+  position: absolute;
+}
+.hero-section .text::before {
+  content: "";
+  background: linear-gradient(180deg, rgba(68, 111, 80, 0) 0%, #446f50 100%);
+  width: 87px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+}
+
+/* History section */
+.history-section {
+  margin-bottom: 80px;
+}
+.history-section .col-md-6:first-child {
+  padding-right: 70px;
+  position: relative;
+}
+.history-section .col-md-6:first-child::after {
+  content: "";
+  height: 195px;
+  width: 195px;
+  background: linear-gradient(
+    140.73deg,
+    #d9ac52 11.11%,
+    rgba(217, 172, 82, 0) 104.97%
+  );
+  position: absolute;
+  right: 2rem;
+  bottom: -2rem;
+  transform: rotate(-180deg);
+}
+.history-section .col-md-6:first-child .image {
+  background: url(/assets/images/history.svg) no-repeat center / cover;
+  min-height: 50vh;
+}
+.history-section h2 {
+  font-size: 54px;
+}
+.history-section .link {
+  color: #d9ac52;
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-color: #d9ac52;
+}
+/* Focus Section */
+.history-section.focus .row {
+  flex-direction: row-reverse;
+}
+.history-section.focus .col-md-6:first-child::after {
+  left: 2rem;
+  background: linear-gradient(
+    223.94deg,
+    #446f50 0%,
+    rgba(68, 111, 80, 0) 117.93%
+  );
+}
+.history-section.focus .col-md-6:first-child .image {
+  background: url(/assets/images/child.svg) no-repeat center / cover;
+  min-height: 50vh;
+}
+.history-section.focus .col-md-6:first-child {
+  padding-left: 70px !important;
+  padding-right: 0;
+}
+/* Stats Section */
+.stats-section {
+  padding: 3rem 0;
+  background-color: #446f50;
+  position: relative;
+}
+.stats-section .d-flex {
+  flex-direction: column;
+  align-items: center;
+}
+.figure-1 {
+  font-size: 132px;
+  color: #d9ac52;
+}
+.stats-section .img-stat {
+  width: 55px;
+  height: 55px;
+}
+.stats-section .img-pattern {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 100% !important;
+  width: 22%;
+  padding: 0;
+  height: 100%;
+}
+.stats-section::after {
+  content: "";
+  width: 98px;
+  background-color: #d9ac52;
+  height: 110%;
+  position: absolute;
+  display: block;
+  left: 25%;
+  top: 0;
+}
+.stats-section::before {
+  content: "Impact";
+  position: absolute;
+  display: block;
+  left: 23%;
+  top: 50%;
+  z-index: 1;
+  font-size: 54px;
+  color: #ffffff;
+  transform: rotate(-90deg);
+}
+
+/* Involved section */
+.involved-section {
+  margin-top: 80px;
+}
+.involved-section .col-md-4 div {
+  border: 1px solid #c7c7c7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0 32px 0;
+}
+.involved-section .col-md-4 img {
+  margin-bottom: 80px;
+}
+.involved-section .col-md-4:first-child,
+.involved-section .col-md-4:first-child {
+  padding-right: 1rem;
+}
+.involved-section h2 {
+  margin-bottom: 3rem;
+}
+.img-inv {
+  height: 90px;
+  width: 90px;
+}
+
+/* Footer */
+footer {
+  padding: 5rem 0;
+  background-color: #446f50;
+}
+.footer-link {
+  color: #ffffff;
+}
+footer .col-md-4:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+footer .row {
+  position: relative;
+}
+footer .row::after {
+  content: "";
+  border-bottom: 1px solid #c7c7c7;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+}
+/* About page */
+.shallow-banner {
+  background-color: #d9ac52;
+  padding: 5rem 0;
+  margin-bottom: 80px;
+}
+.shallow-banner .container {
+  mix-blend-mode: soft-light;
+}
+.shallow-banner .row {
+  justify-content: center;
+}
+.shallow-banner .chakra {
+  max-width: 600px;
+  margin-bottom: -30%;
+  max-width: 600px;
+}
+.shallow-banner .people {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.shallow-banner .people img {
+  max-width: 560px;
+}
+/* Video Section */
+.video-section .container {
+  background: url("../assets/images/shaikh2.svg") no-repeat center/cover;
+  min-height: 90vh;
+  mix-blend-mode: multiply;
+  padding: 0;
+}
+.video-section .video-player {
+  height: 100%;
+  background: #00000066;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play-btn {
+  background: transparent;
+  border: none;
+}
+.video-iframe {
+  width: 100%;
+  min-height: 80vh;
+}
+.modal-dialog {
+  max-width: 800px;
+}
