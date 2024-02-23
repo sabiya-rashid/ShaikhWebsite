@@ -30,3 +30,21 @@ requestAnimationFrame(rotateCircle);
 //         videoIframeContainer.style.display = 'block';
 //     });
 // });
+
+// $(function () {
+//     var path = window.location.href;
+//     $('#navDiv .nav-link').each(function () {
+//         if (this.href === path) {
+//             $(this).addClass('active');
+//         }
+//     })
+// })
+document.addEventListener('DOMContentLoaded', function () {
+    var path = window.location.href;
+    var links = document.querySelectorAll('#navDiv .nav-link');
+    links.forEach(function (link) {
+        if (link.href === path) {
+            link.classList.add('active');
+        }
+    });
+});
