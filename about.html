@@ -1,275 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <title>Aziz</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid px-0">
+            <a class="navbar-brand" href="/index.html"
+              ><img src="./assets/images/header-logo.svg" alt="logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html" id="about_us">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Focus</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Foundery and History</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header> -->
     <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid px-0">
-                    <a class="navbar-brand" href="/index.html"><img src="./assets/images/header-logo.svg"
-                            alt="logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navDiv">
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="team.html">Team</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="focus.html">Focus</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="founder.html">Foundery and History</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="career.html">Careers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid px-0">
+            <a class="navbar-brand" href="index.html"
+              ><img src="./assets/images/header-logo.svg" alt="logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html" id="about_us"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="team.html" id="team">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="focus.html" id="focus">Focus</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="founder.html" id="founderandhistory"
+                    >Foundery and History</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="career.html" id="careers"
+                    >Careers</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html" id="contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="ms-5 position-relative popover-parent">
+            <div class="d-flex justify-content-center align-items-center">
+              <img
+                src="/assets/images/united-states-of-america (1).png"
+                alt=""
+                class="img-fluid mx-2 selected-image"
+              />
+              <img
+                src="/assets//images//expand_more.png"
+                alt=""
+                class="img-fluid arrow-icon"
+                id="arrow-icon"
+              />
+            </div>
+            <!-- PopOver -->
+            <div
+              class="position-absolute bg-white rounded py-2 px-2 popover-lang"
+              id="popover-lang"
+            >
+              <div
+                class="d-flex justify-content-center align-items-center popover-hover px-3"
+                value="en"
+              >
+                <img
+                  src="/assets/images/unitedstatesmap.png"
+                  alt=""
+                  class="img-fluid me-2"
+                />
+                <p class="mb-0">Eng</p>
+              </div>
+              <div
+                class="d-flex justify-content-center align-items-center popover-hover px-3"
+                value="ar"
+              >
+                <img
+                  src="/assets/images/artwork.png"
+                  alt=""
+                  class="img-fluid me-2"
+                />
+                <p class="mb-0">العربية</p>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <div class="shallow-banner position-relative">
-        <div class="container position-relative">
-            <div class="row mx-0">
-                <img src="/assets/images/chakra.svg" class="img-fluid chakra" alt="" id="circle">
-            </div>
+      <div class="container position-relative">
+        <div class="row mx-0">
+          <img
+            src="/assets/images/chakra.svg"
+            class="img-fluid chakra"
+            alt=""
+            id="circle"
+          />
         </div>
-        <div class="people">
-            <img src="./assets/images/shaikh.svg" alt="">
-        </div>
+      </div>
+      <div class="people">
+        <img src="./assets/images/shaikh.svg" alt="" />
+      </div>
     </div>
     <div class="legacy-section">
-        <div class="container">
-            <div class="row mx-0">
-                <div class="col-md-4 ps-0">
-                    <p class="text-lg-center me-5">Founder’s Legacy</p>
-                </div>
-                <div class="col-md-8 ps-0">
-                    <h2>The legacy of
-                        Mutib Bin Abdulaziz</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Placerat iaculis nulla feugiat arcu dignissim. Purus
-                        cursus lacus velit in sit. Viverra sed vitae lorem quam est. Morbi interdum urna consectetur
-                        tortor adipiscing rhoncus augue turpis venenatis.
-                    </p>
-                    <p>
-                        Massa lectus sodales aenean pellentesque. Tristique gravida vestibulum leo augue. Consectetur
-                        ornare placerat lectus et feugiat adipiscing nam tempor. Id elementum nec neque vitae lorem
-                        mauris magna aliquet in. Accumsan sagittis neque diam morbi condimentum odio. Nibh eget
-                        ultricies id est. Lacus in diam vitae amet. Tellus placerat rhoncus magnis massa id eu.
-                    </p>
-                    <p>
-                        Morbi porttitor congue nisl lacinia egestas. Vestibulum scelerisque sagittis vitae varius enim
-                        senectus. Ipsum molestie eu dui porttitor faucibus in turpis. Quis non orci odio quis leo. Augue
-                        volutpat pretium sit tempor leo suspendisse sapien libero. Et porttitor enim condimentum id
-                        nulla blandit magna. Purus neque pellentesque pharetra id nulla magna nisl semper. Netus
-                        volutpat feugiat libero consequat iaculis pharetra sed leo. Natoque sed ullamcorper viverra ut
-                        sed facilisis hac. In nisl senectus felis integer ut dictum mauris. Posuere magna nunc
-                        scelerisque cras</p>
-                    <a href="" class="link">Read More</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row mx-0">
+          <div class="col-md-4 ps-0">
+            <p class="text-lg-center me-5" id="founderslegacy">
+              Founder’s Legacy
+            </p>
+          </div>
+          <div class="col-md-8 ps-0">
+            <h2 id="legacy">The legacy of Mutib Bin Abdulaziz</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Placerat iaculis nulla
+              feugiat arcu dignissim. Purus cursus lacus velit in sit. Viverra
+              sed vitae lorem quam est. Morbi interdum urna consectetur tortor
+              adipiscing rhoncus augue turpis venenatis.
+            </p>
+            <p>
+              Massa lectus sodales aenean pellentesque. Tristique gravida
+              vestibulum leo augue. Consectetur ornare placerat lectus et
+              feugiat adipiscing nam tempor. Id elementum nec neque vitae lorem
+              mauris magna aliquet in. Accumsan sagittis neque diam morbi
+              condimentum odio. Nibh eget ultricies id est. Lacus in diam vitae
+              amet. Tellus placerat rhoncus magnis massa id eu.
+            </p>
+            <p>
+              Morbi porttitor congue nisl lacinia egestas. Vestibulum
+              scelerisque sagittis vitae varius enim senectus. Ipsum molestie eu
+              dui porttitor faucibus in turpis. Quis non orci odio quis leo.
+              Augue volutpat pretium sit tempor leo suspendisse sapien libero.
+              Et porttitor enim condimentum id nulla blandit magna. Purus neque
+              pellentesque pharetra id nulla magna nisl semper. Netus volutpat
+              feugiat libero consequat iaculis pharetra sed leo. Natoque sed
+              ullamcorper viverra ut sed facilisis hac. In nisl senectus felis
+              integer ut dictum mauris. Posuere magna nunc scelerisque cras
+            </p>
+            <a href="" class="link" id="readmore">Read More</a>
+          </div>
         </div>
+      </div>
     </div>
     <div class="video-section">
-        <div class="container">
-            <div class="video-player">
-                <button class="play-btn"><img src="./assets/images/play-btn.svg" alt="" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"></button>
-            </div>
+      <div class="container">
+        <div class="video-player">
+          <button class="play-btn">
+            <img
+              src="./assets/images/play-btn.svg"
+              alt=""
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            />
+          </button>
         </div>
-        <!-- Modal -->
-        <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="video-iframe-container">
-                            <iframe class="video-iframe"
-                                src="https://www.youtube.com/embed/vYbqPowQ9tk?si=rcbCwqTQUL-WZakM" frameborder="0"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <!-- Modal -->
+      <div
+        class="modal"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
+            <div class="modal-body">
+              <div class="video-iframe-container">
+                <iframe
+                  class="video-iframe"
+                  src="https://www.youtube.com/embed/vYbqPowQ9tk?si=rcbCwqTQUL-WZakM"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="history-section col_1">
-        <div class="container">
-            <div class="text-center mb-5 pb-5">
-                <h6>Our Journey</h6>
-                <h2>The Narative of our Time</h2>
-            </div>
-            <div class="row mx-0">
-                <div class="col-lg-6 ps-0">
-                    <div class="image"></div>
-                </div>
-                <div class="col-lg-6">
-                    <h2>Humble Beginnings</h2>
-                    <p>The Mutib Foundation uses the Science of Benevolence to bring ever more improvement to peoples’
-                        lives. We are a new kind of foundation; open, energetic, curious and professional, operating
-                        objective, data-driven ways of delivering evermore benefit to ever more people.</p>
-                    <!-- <a href="" class="link">Read More</a> -->
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-center mb-5 pb-5">
+          <h6 id="ourjourney">Our Journey</h6>
+          <h2 id="narrativetime">The Narative of our Time</h2>
         </div>
+        <div class="row mx-0">
+          <div class="col-lg-6 ps-0">
+            <div class="image"></div>
+          </div>
+          <div class="col-lg-6 pe-6">
+            <h2 id="humble">Humble Beginnings</h2>
+            <p id="textactivefirst">
+              The Mutib Foundation uses the Science of Benevolence to bring ever
+              more improvement to peoples’ lives. We are a new kind of
+              foundation; open, energetic, curious and professional, operating
+              objective, data-driven ways of delivering evermore benefit to ever
+              more people.
+            </p>
+            <!-- <a href="" class="link">Read More</a> -->
+          </div>
+        </div>
+      </div>
     </div>
     <div class="history-section focus col_2">
-        <div class="container">
-            <div class="row mx-0">
-                <div class="col-lg-6 ps-0">
-                    <div class="image"></div>
-                </div>
-                <div class="col-lg-6">
-                    <!-- <h6>Our Focus</h6> -->
-                    <h2>Achievement/Initiative</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Placerat iaculis nulla feugiat arcu dignissim. Purus
-                        cursus lacus velit in sit. Viverra sed vitae lorem quam est. Morbi interdum urna consectetur
-                        tortor adipiscing rhonc turpis enenatis.</p>
-                    <!-- <a href="" class="link">Read Our Stories</a> -->
-                </div>
-            </div>
+      <div class="container">
+        <div class="row mx-0">
+          <div class="col-lg-6 ps-0">
+            <div class="image"></div>
+          </div>
+          <div class="col-lg-6 pe-6">
+            <!-- <h6>Our Focus</h6> -->
+            <h2 id="achievement">Achievement/Initiative</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Placerat iaculis nulla
+              feugiat arcu dignissim. Purus cursus lacus velit in sit. Viverra
+              sed vitae lorem quam est. Morbi interdum urna consectetur tortor
+              adipiscing rhonc turpis enenatis.
+            </p>
+            <!-- <a href="" class="link">Read Our Stories</a> -->
+          </div>
         </div>
+      </div>
     </div>
     <div class="history-section col_3">
-        <div class="container">
-            <div class="row mx-0">
-                <div class="col-lg-6 ps-0">
-                    <div class="image"></div>
-                </div>
-                <div class="col-lg-6">
-                    <h6>Foundery and History</h6>
-                    <h2>The legacy of
-                        Mutib Bin Abdulaziz</h2>
-                    <p>The Mutib Foundation uses the Science of Benevolence to bring ever more improvement to peoples’
-                        lives. We are a new kind of foundation; open, energetic, curious and professional, operating
-                        objective, data-driven ways of delivering evermore benefit to ever more people.</p>
-                    <a href="" class="link">Read More</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row mx-0">
+          <div class="col-lg-6 ps-0">
+            <div class="image"></div>
+          </div>
+          <div class="col-lg-6 pe-6">
+            <h6 id="founderhistory">Foundery and History</h6>
+            <h2 id="legacyabout">The legacy of Mutib Bin Abdulaziz</h2>
+            <p id="textactivesecond">
+              The Mutib Foundation uses the Science of Benevolence to bring ever
+              more improvement to peoples lives. We are a new kind of
+              foundation; open, energetic, curious and professional, operating
+              objective, data-driven ways of delivering evermore benefit to ever
+              more people.
+            </p>
+            <a href="" class="link" id="readmoreabout">Read More</a>
+          </div>
         </div>
+      </div>
     </div>
     <div class="history-section focus col_4">
-        <div class="container">
-            <div class="row mx-0">
-                <div class="col-lg-6 ps-0">
-                    <div class="image"></div>
-                </div>
-                <div class="col-lg-6">
-                    <h6>Our Focus</h6>
-                    <h2>Active Programs</h2>
-                    <p>This section highlights the foundation's tangible contributions. This can include stories of
-                        initiatives in community, education and access to clean water.</p>
-                    <a href="" class="link">Read Our Stories</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row mx-0">
+          <div class="col-lg-6 ps-0">
+            <div class="image"></div>
+          </div>
+          <div class="col-lg-6">
+            <h6 id="ourfocus">Our Focus</h6>
+            <h2 id="activeprogams">Active Programs</h2>
+            <p id="text2">
+              This section highlights the foundation's tangible contributions.
+              This can include stories of initiatives in community, education
+              and access to clean water.
+            </p>
+            <a href="" class="link" id="readourstories">Read Our Stories</a>
+          </div>
         </div>
+      </div>
     </div>
     <div class="attribute-section">
-        <div class="legacy-section">
-            <div class="container">
-                <div class="row mx-0">
-                    <div class="col-md-4 ps-0">
-                        <p class="text-center me-5">Our Journey</p>
-                    </div>
-                    <div class="col-md-8">
-                        <!-- <h6>Our Journey</h6> -->
-                        <h2>Attributes & Values</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur. Placerat iaculis nulla feugiat arcu dignissim. Purus
-                            cursus lacus velit in sit. Viverra sed vitae lorem quam est. Morbi interdum urna consectetur
-                            tortor adipiscing rhonc turpis enenatis.
-                        </p>
-                        <a href="" class="link">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="legacy-section">
         <div class="container">
-            <div class="row mx-0">
-                <div class="col-md-3">
-                    <div class="shape">
-                        <img src="./assets/images/shape1.svg" alt="">
-                        <h3>Attribute/value 1</h3>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="shape">
-                        <img src="./assets/images/shape2.svg" alt="">
-                        <h3>Attribute/value 1</h3>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="shape">
-                        <img src="./assets/images/shape3.svg" alt="">
-                        <h3>Attribute/value 1</h3>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="shape">
-                        <img src="./assets/images/shape4.svg" alt="">
-                        <h3>Attribute/value 1</h3>
-                    </div>
-                </div>
+          <div class="row mx-0">
+            <div class="col-md-4 ps-0">
+              <p class="text-center me-5" id="ourjourneyabout">Our Journey</p>
             </div>
+            <div class="col-md-8">
+              <!-- <h6>Our Journey</h6> -->
+              <h2 id="attributeandvalues">Attributes & Values</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Placerat iaculis nulla
+                feugiat arcu dignissim. Purus cursus lacus velit in sit. Viverra
+                sed vitae lorem quam est. Morbi interdum urna consectetur tortor
+                adipiscing rhonc turpis enenatis.
+              </p>
+              <a href="" class="link" id="readmoreabout2">Read More</a>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="container">
+        <div class="row mx-0">
+          <div class="col-md-3">
+            <div class="shape">
+              <img src="./assets/images/shape1.svg" alt="" />
+              <h3 id="attributevalue1">Attribute/value 1</h3>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="shape">
+              <img src="./assets/images/shape2.svg" alt="" />
+              <h3 id="attributevalue2">Attribute/value 1</h3>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="shape">
+              <img src="./assets/images/shape3.svg" alt="" />
+              <h3 id="attributevalue3">Attribute/value 1</h3>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="shape">
+              <img src="./assets/images/shape4.svg" alt="" />
+              <h3 id="attributevalue4">Attribute/value 1</h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
-        <div class="container px-0">
-            <div class="row mx-0 foot-main">
-                <div class="col-md-8">
-                    <div class="row mx-0">
-                        <div class="col-md-4">
-                            <img src="./assets/images/footer-logo.svg" alt="">
-                        </div>
-                        <div class="col-md-4">
-                            <ul>
-                                <li><a class="footer-link" href="">About</a></li>
-                                <li><a class="footer-link" href="">Team</a></li>
-                                <li><a class="footer-link" href="">Focus</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <ul>
-                                <li><a class="footer-link" href="">Founder & History</a></li>
-                                <li><a class="footer-link" href="">Career</a></li>
-                                <li><a class="footer-link" href="">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 social-links">
-                    <ul class="d-flex">
-                        <li class="px-3"><a href=""><img src="./assets/images/linkedin.svg" alt=""></a></li>
-                        <li class="px-3"><a href=""><img src="./assets/images/instagram.svg" alt=""></a></li>
-                        <li class="px-3"><a href=""><img src="./assets/images/facebook.svg" alt=""></a></li>
-                    </ul>
-                </div>
+      <div class="container px-0">
+        <div class="row mx-0 foot-main">
+          <div class="col-md-8">
+            <div class="row mx-0">
+              <div class="col-md-4">
+                <img src="./assets/images/footer-logo.svg" alt="" />
+              </div>
+              <div class="col-md-3">
+                <ul>
+                  <li>
+                    <a class="footer-link" href="" id="about_footer">About</a>
+                  </li>
+                  <li>
+                    <a class="footer-link" href="" id="team_footer">Team</a>
+                  </li>
+                  <li>
+                    <a class="footer-link" href="" id="focus_footer">Focus</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul>
+                  <li>
+                    <a class="footer-link" href="" id="founderandhistory_footer"
+                      >Founder & History</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-link" href="" id="careers_footer"
+                      >Career</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-link" href="" id="contact_footer"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+          <div class="col-md-4 social-links">
+            <ul class="d-flex">
+              <li class="px-3">
+                <a href=""><img src="./assets/images/linkedin.svg" alt="" /></a>
+              </li>
+              <li class="px-3">
+                <a href=""
+                  ><img src="./assets/images/instagram.svg" alt=""
+                /></a>
+              </li>
+              <li class="px-3">
+                <a href=""><img src="./assets/images/facebook.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-<script src="./js/index.js"></script>
-
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/translation.js"></script>
+  <script src="./js/index.js"></script>
 </html>
