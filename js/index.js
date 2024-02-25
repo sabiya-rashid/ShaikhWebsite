@@ -30,20 +30,33 @@
 // });
 
 const circle = document.getElementById("circle");
-let rotation = 0;
-let lastTime = null;
 
-function rotateCircle(timestamp) {
-  if (!lastTime) {
+if (circle) {
+  let rotation = 0;
+  let lastTime = null;
+
+  function rotateCircle(timestamp) {
+    if (!lastTime) {
+      lastTime = timestamp;
+    }
+    const deltaTime = timestamp - lastTime;
     lastTime = timestamp;
-  }
-  const deltaTime = timestamp - lastTime;
-  lastTime = timestamp;
 
-  rotation += 0.023 * deltaTime; // Adjust rotation speed here
-  circle.style.transform = `rotate(${rotation}deg)`; // Apply rotation
+    rotation += 0.023 * deltaTime; // Adjust rotation speed here
+    circle.style.transform = `rotate(${rotation}deg)`; // Apply rotation
+
+    requestAnimationFrame(rotateCircle);
+  }
 
   requestAnimationFrame(rotateCircle);
 }
 
-requestAnimationFrame(rotateCircle);
+document.addEventListener('DOMContentLoaded', function () {
+  var path = window.location.href;
+  var links = document.querySelectorAll('.nav-link');
+  links.forEach(function (link) {
+    if (link.href === path) {
+      link.classList.add('active');
+    }
+  });
+});
