@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
-    <title>Aziz</title>
+    <title>Muteeb | Founder</title>
 </head>
 
 <body>
@@ -21,33 +21,50 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="#navDiv">
                             <li class="nav-item">
                                 <a class="nav-link" href="about.html" id="about_us"></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" id="team">Team</a>
+                                <a class="nav-link" href="team.html" id="team">Team</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" id="focus">Focus</a>
+                                <a class="nav-link" href="focus.html" id="focus">Focus</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" id="founderandhistory">Foundery and History</a>
+                                <a class="nav-link" href="founder.html" id="founderandhistory">Foundery and History</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" id="careers">Careers</a>
+                                <a class="nav-link" href="career.html" id="careers">Careers</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" id="contact">Contact</a>
+                                <a class="nav-link" href="contact.html" id="contact">Contact</a>
                             </li>
                         </ul>
-                        <select id="languageSelect">
-                            <option value="">Select Language</option>
-                            <option value="en">English</option>
-                            <option value="ar">Arabic</option>
-                        </select>
+                        <div class="ms-5 position-relative popover-parent">
+                            <div class="d-flex justify-content-lg-center align-items-center">
+                                <img src="/assets/images/united-states-of-america (1).png" alt=""
+                                    class="img-fluid mx-2 selected-image" />
+                                <img src="/assets//images//expand_more.png" alt="" class="img-fluid arrow-icon"
+                                    id="arrow-icon" />
+                            </div>
+                            <!-- PopOver -->
+                            <div class="position-absolute bg-white rounded py-2 px-2 popover-lang" id="popover-lang">
+                                <div class="d-flex justify-content-center align-items-center popover-hover px-3"
+                                    value="en">
+                                    <img src="/assets/images/unitedstatesmap.png" alt="" class="img-fluid me-2" />
+                                    <p class="mb-0">Eng</p>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center popover-hover px-3"
+                                    value="ar">
+                                    <img src="/assets/images/artwork.png" alt="" class="img-fluid me-2" />
+                                    <p class="mb-0">العربية</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </nav>
         </div>
     </header>
@@ -65,5 +82,6 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 <script src="./js/index.js"></script>
+<script src="./js/translation.js"></script>
 
 </html>
