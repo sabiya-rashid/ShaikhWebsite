@@ -83,8 +83,18 @@ header .container {
 .nav-link {
   font-size: 18px;
   color: #000000;
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
+}
+@media screen and (min-width: 1200px) {
+  .nav-link {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .nav-link {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 header .nav-link.active {
   color: #ffa369 !important;
@@ -107,6 +117,14 @@ header .nav-link.active {
   padding: 0;
   background: linear-gradient(
     90.62deg,
+    rgba(80, 69, 60, 0.8) 0.54%,
+    rgba(85, 74, 64, 0.648) 42.71%,
+    rgba(107, 93, 83, 0) 95.3%
+  );
+}
+body.ar .hero-section .container {
+  background: linear-gradient(
+    -90.62deg,
     rgba(80, 69, 60, 0.8) 0.54%,
     rgba(85, 74, 64, 0.648) 42.71%,
     rgba(107, 93, 83, 0) 95.3%
@@ -139,6 +157,9 @@ header .nav-link.active {
   left: 20%;
   position: relative;
 }
+body.ar .hero-section .col-md-6 {
+  left: 0;
+}
 .text h2 {
   color: #ffffff;
   font-size: 54px;
@@ -149,6 +170,7 @@ header .nav-link.active {
 
 body.ar .hero-section .container::after {
   right: 87px;
+  /* right: 0; */
 }
 body.ar .hero-section .container::before {
   right: 0px;
@@ -260,7 +282,10 @@ body.ar .history-section.focus .col-lg-6:first-child {
   width: 55px;
   height: 55px;
 }
-
+body.ar .stats-section .col-lg-3.offset-lg-3 {
+  margin-right: 25%;
+  margin-left: 0;
+}
 body.ar .stats-section .img-pattern {
   right: 0;
 }
@@ -488,6 +513,9 @@ footer .foot-main:after {
     height: 41px;
     left: 0;
   }
+  body.ar .hero-section .container::after {
+    right: 0;
+  }
   .hero-section .container::before {
     width: 100%;
     height: 41px;
@@ -501,23 +529,37 @@ footer .foot-main:after {
     margin-top: 4rem;
   }
   .history-section.focus .col-lg-6:first-child::after {
-    right: 0;
+    right: -1rem;
+    left: auto;
+  }
+  body.ar .history-section.focus .col-lg-6:first-child::after {
+    right: -1rem;
     left: auto;
   }
   .history-section.focus .col-lg-6:first-child {
     padding-left: 0 !important;
-    padding-right: 2rem;
+    padding-right: 0;
+  }
+  body.ar .history-section.focus .col-lg-6:first-child {
+    padding-right: 0;
   }
   .history-section .col-lg-6:first-child::after {
     height: 110px;
     width: 110px;
-    right: 0;
+    right: -1rem;
+  }
+  body.ar .history-section .col-lg-6:first-child::after {
+    right: -1.5rem;
   }
   .history-section .col-lg-6:first-child {
-    padding-right: 2rem;
+    padding-right: 0;
+    /* padding-left: 0 !important; */
+  }
+  body.ar .history-section .col-lg-6:first-child {
+    padding-right: 0;
   }
   .stats-section {
-    padding: 7rem 0 3rem 0;
+    padding: 7rem 0 3rem 0 !important;
   }
   .stats-section .img-pattern {
     display: none;
@@ -528,11 +570,17 @@ footer .foot-main:after {
     left: 0;
     top: 40px;
   }
+  body.ar .stats-section::after {
+    right: 0;
+  }
   .stats-section::before {
     top: 40px;
     transform: rotate(0deg) translateX(-50%);
     left: 50%;
     font-size: 44px;
+  }
+  body.ar .stats-section::before {
+    left: 50%;
   }
   .stats-section .col-lg-3 {
     padding-bottom: 3rem;
@@ -543,6 +591,9 @@ footer .foot-main:after {
   .stats-section .col-lg-3:last-child {
     border-bottom: none;
     /* padding-bottom: 0; */
+  }
+  body.ar .stats-section .col-lg-3.offset-lg-3 {
+    margin-right: 0;
   }
   .hero-section .col-md-6 {
     left: 0;
@@ -573,8 +624,17 @@ footer .foot-main:after {
   .navbar-light .navbar-toggler {
     border: none;
   }
+  header .popover-parent {
+    padding-right: 68px;
+  }
   header .nav-link {
     padding-left: 0 !important;
+  }
+  header .navbar .popover-parent {
+    padding-bottom: 2rem;
+  }
+  body.en header .navbar .popover-parent {
+    margin-left: 0.5rem !important;
   }
   .navbar-toggler:focus {
     box-shadow: none;
@@ -597,6 +657,9 @@ footer .foot-main:after {
   .shallow-banner .people img {
     max-width: 300px;
   }
+  footer .col-lg-4 {
+    margin-bottom: 2rem;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -604,6 +667,15 @@ footer .foot-main:after {
   }
   .stats-section .col-lg-3 {
     margin-top: 6rem;
+  }
+  header .navbar-nav {
+    padding-right: 0rem;
+  }
+  header .popover-parent {
+    padding-right: 0.5rem;
+  }
+  .hero-section .col-md-6 {
+    padding: 0 2rem;
   }
 }
 
