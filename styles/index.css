@@ -660,6 +660,10 @@ footer .foot-main:after {
   footer .col-lg-4 {
     margin-bottom: 2rem;
   }
+  body.en .popover-lang {
+    left: 0;
+    right: auto;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -676,6 +680,9 @@ footer .foot-main:after {
   }
   .hero-section .col-md-6 {
     padding: 0 2rem;
+  }
+  .shallow-banner .chakra {
+    max-width: 300px;
   }
 }
 
